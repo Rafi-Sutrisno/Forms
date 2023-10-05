@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: #E0E2DB;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow:hidden;
+}
+
+.slide{
+    height: 1500px;
+    width: 200px;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    background-color: #65DEF1;
+    transform: rotate(50deg);
+}
+
+.sl2{
+    margin-top: -700px;
+    margin-left: -400px;
+}
+
+.top-slide{
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.hero{
+    z-index: 1;
+    background-color: #D2D4C8;
+    border-radius: 10px;
+    padding: 20px;
+    height: fit-content;
+    width: 40vw;
+}
+
+.hero .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    gap: 20px;
+}
+
+.title .icon{
+    background-color: #cbd1b6;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    background-image: url(gambar/school.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.content{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.content form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 3px;
+}
+
+.content input, .content select{
+    padding: 5px;
+}
+
+.content button{
+    padding: 10px 0;
+    background-color: #65DEF1;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.content button:hover{
+    background-color: #65def1c9;
+}
+
+/* no 2 */
+
+.pos{
+    z-index: 1;
+    width: 40vw;
+    background-color: #D2D4C8;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 25px;
+}
+
+.pos .head{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pos .head .icon{
+    background-color: #cbd1b6;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    background-image: url(gambar/mail-box.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.pos form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.pos .flex{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pos input{
+    padding: 5px;
+}
+
+.zipcode{
+    display: flex;
+    gap: 0;
+    width: 100%;
+}
+
+.zipcode input{
+    width: 100%;
+}
+
+.zipcode button{
+    background-color: #65DEF1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.zipcode button:hover{
+    background-color: #65def1c9;
+}
+
+.pos .hasil{
+    height: 110px;
+    width: 100%;
+    background-color: #65DEF1 ;
+    color: white;
+    border-radius: 10px;
+}

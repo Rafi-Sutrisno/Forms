@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='script.js'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-slide">
+            <div class="slide">
+
+            </div>
+            <div class="slide sl2">
+
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="top">
+                <div class="head">
+                    <div class="title">
+                        <div class="icon">
+
+                        </div>
+                        <p>SCHOOL</p>
+                    </div>
+                    <p>Form Registration</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <form name="form1" action="#" onsubmit="return validateForm()" method="post">
+                    <div>
+                        <label for="fname">Name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="enter your name">
+                    </div>
+                
+                    <div>
+                        <label for="nrp">Nrp:</label>
+                        <input type="text" id="nrp" name="nrp" placeholder="enter your nrp">
+                    </div>
+                    
+                    <div>
+                        <label for="matkul">Choose a subject:</label>
+                        <select name="matkul" id="matkul" class="dropdown">
+                            <option disabled selected>-- select an option --</option>
+                            <option value="sisop">Sisop</option>
+                            <option value="jarkom">Jarkom</option>
+                            <option value="rsbp">Rsbp</option>
+                            <option value="daspro">Daspro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="nrp">Dosen:</label>
+                        <input type="text" id="dname" name="dname" list="dosen" placeholder="select your dosen">
+                        
+                        <datalist id="dosen">
+                            <option value="1">bob</option>
+                            <option value="Verdana1">Verdana</option>
+                            <option value="Helveltica">Helveltica</option></option>
+                            <option value="Sans Serif">Sans Serif</option>
+                            <option value="Calibiri">Calibiri</option>
+                            <option value="Roman">Roman</option>
+                            <option value="Algebrian">Algebrian</option>
+                         </datalist>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="pos">
+            <div class="head">
+                <div class="icon">
+
+                </div>
+                <p>POS INDONESIA</p>
+            </div>
+            <p>Mencari kode pos di sekitar wilayah indonesia</p>
+            <form action="#">
+                <div class="flex">
+                    <label for="nrp">Provinces:</label>
+                    <input type="text" id="pname" name="pname" list="provinsi" placeholder="select provinces">
+    
+                    <datalist id="provinsi">
+                    </datalist>
+                </div>
+    
+                <div class="flex">
+                    <label for="nrp">City:</label>
+                    <input type="text" id="cname" name="cname" list="city" placeholder="select city">
+    
+                    <datalist id="city">
+                    </datalist>
+                </div>
+    
+                <div class="flex">
+                    <label for="kname">Kode Pos:</label>
+                    <div class="zipcode">
+                        <input type="text" id="kname" name="kname" list="zipList" placeholder="Input zip code">
+
+                        <datalist id="zipList">
+                        </datalist>
+
+                        <button type="button" onclick="zipfind()">Search</button>
+                    </div>
+                </div>
+    
+                <div class="hasil">
+                    <p id="exp1"></p>
+                    <p id="exp2"></p>
+                    <p id="exp3"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
